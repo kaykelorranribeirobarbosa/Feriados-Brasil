@@ -1,0 +1,104 @@
+:root {
+    --primary: #ff0000;
+    --secondary: #64748b;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --bg: #000000;
+    --text: #ff0000;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+head {
+    text-align: center;
+    margen-bottom: 25px;
+}
+
+.card {
+    background: rgb(0, 0, 0);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px -1px rgb(255, 255, 255);
+    margin-bottom: 15px
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    padding: 11px 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: rgb(255, 255, 255)
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: rgb(255, 255, 255)
+}
+
+.btn-edit {
+    background: #ffffff;
+    color: var(--text);
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background: #ffffff;
+    color: var(--danger);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ff0000;
+}
+
+.table-container {
+    overflow-x: auto;
+}
