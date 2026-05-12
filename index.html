@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Feriado Brasil</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Feriados Brasil</h1>
+        </header>
+
+        <section class="card">
+            <h2 id="form-title"></h2>
+            <div id="feriado-div">
+                <div class="input-group">
+                    <input type="text" id="ano" placeholder="Digite o ano" required>
+                </div>
+
+                <div class="actions">
+                    <button id="btn-submit" class="btn-primary">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Lista</h2>
+            <div class="table-container">
+                <table id="Feriado-table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="feriado-form">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+
+</html>
